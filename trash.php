@@ -47,7 +47,7 @@ shell_exec('rm *.jpg');
 // SEND AN EMAIL IF THE TRASH HAS NOT BEEN TAKEN OUT
 
 // If the percentage difference between the two images is over 70, send an email notification
-if($percentdiff >= 70){
+if($percentdiff < 70){
 
 // Include PHP Mailer class
 require_once "Mail-1.3.0/Mail.php";
